@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, Bellefair } from "next/font/google";
 import "./globals.css";
+import MainNavBar from "@/components/MainNavBar";
 
 const barlow = Barlow({
   weight: "400",
@@ -38,7 +39,7 @@ export default function RootLayout({
       <body
         className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
       >
-        {children}
+        <MainNavBar>{children}</MainNavBar>
       </body>
     </html>
   );
