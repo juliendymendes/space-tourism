@@ -11,7 +11,9 @@ For this challenge users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ## Why Next.js with TypeScript and Tailwind CSS
+
 ...
+
 ## Running the project
 
 First, run the development server:
@@ -30,6 +32,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Deploy
 
-## Deploy 
 ...
