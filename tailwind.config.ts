@@ -12,6 +12,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "home-mobile": "url('/home/background-home-mobile.jpg')",
+        "home-tablet": "url('/home/background-home-tablet.jpg')",
+        "home-desktop": "url('/home/background-home-desktop.jpg')",
       },
       colors: {
         dark: "#0B0D17",
