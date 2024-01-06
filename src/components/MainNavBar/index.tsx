@@ -33,7 +33,7 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
                 </li>
                 <li>
                   <Link
-                    href=""
+                    href="/destination"
                     className="leading-[57px] xl:leading-[94px] !rounded-none hover:border-b-2 active:border-b-2 focus:border-b-2 focus:!bg-transparent focus:!text-white p-0 w-fit  border-white"
                   >
                     <strong className="hidden xl:inline">01</strong>Destination
@@ -74,7 +74,7 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
           {children}
         </div>
         {/* SIDEBAR */}
-        <div className="drawer-side">
+        <div className="drawer-side overflow-hidden">
           <label htmlFor="drawer" aria-label="close sidebar"></label>
           <ul className="menu p-4 w-72 min-h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-2xl font-barlowCondensed text-base tracking-[2.7px] uppercase text-white gap-y-5">
             {/* Sidebar content here */}
@@ -99,7 +99,7 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link href="/destination">
                 <strong>01</strong> Destination
               </Link>
             </li>
