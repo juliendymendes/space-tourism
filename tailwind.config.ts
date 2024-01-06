@@ -15,6 +15,12 @@ const config: Config = {
         "home-mobile": "url('/home/background-home-mobile.jpg')",
         "home-tablet": "url('/home/background-home-tablet.jpg')",
         "home-desktop": "url('/home/background-home-desktop.jpg')",
+        "destination-mobile":
+          "url('/destination/background-destination-mobile.jpg')",
+        "destination-tablet":
+          "url('/destination/background-destination-tablet.jpg')",
+        "destination-desktop":
+          "url('/destination/background-destination-desktop.jpg')",
       },
       colors: {
         dark: "#0B0D17",
