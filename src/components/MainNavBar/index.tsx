@@ -11,26 +11,53 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
   }
   return (
     <nav>
-      <div className="drawer drawer-end">
+      <div className="drawer drawer-end ">
         <input id="drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
-          {/* Navbar */}
-          <div className="w-full navbar bg-dark">
-            <div className="flex-1 px-2 mx-2">
+        <div className="drawer-content flex flex-col relative">
+          <div className="hidden xl:block h-[1px] w-[40%] 2xl:w-[40%] bg-white absolute top-16 left-52 2xl:left-60 z-50 min-[2000px]:left-80"></div>
+          {/* NAVBAR */}
+          <div className="w-full navbar absolute xl:top-5 md:pt-0 md:pe-0 md:bg-transparent xl:h-[96px]">
+            <div className="flex-1 px-2 pt-2 mx-2 xl:ms-10">
               <Image src="/logo.svg" width={40} height={40} alt="Logo" />
             </div>
-            <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal">
+            <div className="flex-none xl:flex-1 hidden md:block">
+              <ul className="menu menu-horizontal flex h-full md:h-[60px] xl:h-[96px] md:py-0 md:px-8 xl:px-16 2xl:px-24 2xl:ps-28 bg-[rgba(255,255,255,0.04)] backdrop-blur-2xl font-barlowCondensed md:text-sm lg:text-base min-[2000px]:text-2xl md:tracking-[2.362px] uppercase text-white md:gap-x-10 2xl:gap-x-24">
                 {/* Navbar menu content here */}
                 <li>
-                  <a>Navbar Item 1</a>
+                  <Link
+                    href="/"
+                    className="leading-[57px] xl:leading-[94px] !rounded-none hover:border-b-2 active:border-b-2 focus:border-b-2 focus:!bg-transparent focus:!text-white p-0 w-fit  border-white"
+                  >
+                    <strong className="hidden xl:inline">00</strong>Home
+                  </Link>
                 </li>
                 <li>
-                  <a>Navbar Item 2</a>
+                  <Link
+                    href=""
+                    className="leading-[57px] xl:leading-[94px] !rounded-none hover:border-b-2 active:border-b-2 focus:border-b-2 focus:!bg-transparent focus:!text-white p-0 w-fit  border-white"
+                  >
+                    <strong className="hidden xl:inline">01</strong>Destination
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="leading-[57px] xl:leading-[94px] !rounded-none hover:border-b-2 active:border-b-2 focus:border-b-2 focus:!bg-transparent focus:!text-white p-0 w-fit  border-white"
+                  >
+                    <strong className="hidden xl:inline">02</strong>Crew
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href=""
+                    className="leading-[57px] xl:leading-[94px] !rounded-none hover:border-b-2 active:border-b-2 focus:border-b-2 focus:!bg-transparent focus:!text-white p-0 w-fit border-white"
+                  >
+                    <strong className="hidden xl:inline">03</strong>Technology
+                  </Link>
                 </li>
               </ul>
             </div>
-            <div className="flex-none lg:hidden">
+            <div className="flex-none md:hidden">
               <label
                 htmlFor="drawer"
                 aria-label="open sidebar"
@@ -46,12 +73,9 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
           </div>
           {children}
         </div>
+        {/* SIDEBAR */}
         <div className="drawer-side">
-          <label
-            htmlFor="drawer"
-            aria-label="close sidebar"
-            className="drawer-overlay"
-          ></label>
+          <label htmlFor="drawer" aria-label="close sidebar"></label>
           <ul className="menu p-4 w-72 min-h-full bg-[rgba(255,255,255,0.04)] backdrop-blur-2xl font-barlowCondensed text-base tracking-[2.7px] uppercase text-white gap-y-5">
             {/* Sidebar content here */}
 
@@ -70,7 +94,7 @@ function MainNavBar({ children }: { children: React.ReactNode }) {
             </svg>
 
             <li>
-              <Link href="">
+              <Link href="/">
                 <strong>00</strong> Home
               </Link>
             </li>
